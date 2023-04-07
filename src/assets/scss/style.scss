@@ -1,0 +1,28 @@
+
+/* check comments*/
+body{
+    margin: 0;
+}
+html{
+    font-size: 10px;
+    background-color: pink;
+    background-image: url(../images/peaceful-water-landscape-photo-l.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    color: red;
+}
+h2{
+    color: white;
+    font-size: 120px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
