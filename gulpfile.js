@@ -1,22 +1,21 @@
 "use strict"
 
-const {src , dest} = require("gulp");
-const gulp = require("gulp");
-const autoprefixer = require("gulp-autoprefixer");
-const cssbeutify = require("gulp-cssbeautify");
-const removeComments = require("gulp-strip-css-comments");
-const rename = require("gulp-rename");
-const sass = require("gulp-sass")(require('sass'));
-const cssnano = require("gulp-cssnano");
-const uglify = require("gulp-uglify");
-const plumber = require("gulp-plumber");
-const panini = require("panini");
-const imagemin = require("gulp-imagemin")
-const rigger = require("gulp-rigger")
-const del = require("del");
-const bootstrap = require('bootstrap') 
-const notify = require("gulp-notify")
-const browserSync = require("browser-sync").create();
+const {src , dest} = require("gulp"),
+gulp = require("gulp"),
+autoprefixer = require("gulp-autoprefixer"),
+cssbeutify = require("gulp-cssbeautify"),
+removeComments = require("gulp-strip-css-comments"),
+rename = require("gulp-rename"),
+sass = require("gulp-sass")(require('sass')),
+cssnano = require("gulp-cssnano"),
+uglify = require("gulp-uglify"),
+plumber = require("gulp-plumber"),
+panini = require("panini"),
+imagemin = require("gulp-imagemin"),
+rigger = require("gulp-rigger"),
+del = require("del"),
+notify = require("gulp-notify"),
+browserSync = require("browser-sync").create();
 
 const srcPath = "src/";
 const distPath = "dist/";
@@ -131,7 +130,7 @@ function images(){
     .pipe(imagemin([
         imagemin.gifsicle({interlaced: true}),
         imagemin.mozjpeg({quality: 80, progressive: true}),
-        imagemin.optipng({optimizationLevel: 5}),
+        imagemin.optipng({optimizationLevel: 1}),
         imagemin.svgo({
             plugins: [
                 {removeViewBox: true},
