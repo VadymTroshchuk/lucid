@@ -3,27 +3,8 @@
 @use "../abstracts/_variables.scss" as v;
 @use "../abstracts/_mixins.scss" as m;
 
-.devices{
-    padding-top: 40px;
-    &__container{
+.device{
 
-    }
-
-    &__list-container{
-        padding-top: 40px;
-    }
-    &__list-item__wrapper{
- 
-    }
-    &__icon-wrapper{
-
-    }
-    &__icon{
-
-    }
-    &__item-title{
-
-    }
     &__item-text{
         @include m.section-text;
     }
@@ -34,9 +15,8 @@
     &__title{
         @include m.black-title;
         
-    }  
+    }   
     &__text{
         @include m.section-text
     } 
-
 }
