@@ -32,7 +32,7 @@
 
   }
   &__title{
-    @include m.title;
+    @include m.white-title;
   }
   &__sub-title{
     @include m.sub-title; 

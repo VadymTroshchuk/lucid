@@ -1,14 +1,19 @@
 @import "../../../../node_modules/bootstrap/scss/_mixins";
     // line-height: 48px;
-@mixin title{
-font-size: 36px;
-
+@mixin white-title{
+font-size: 48px;
 color:  #ffffff;
 letter-spacing: 1px;
 
 } 
+@mixin black-title{
+    font-size: 36px;
+    color:  #000000;
+    letter-spacing: 1px;
+    
+    } 
 @mixin sub-title{
-    font-size: 9px;
+    font-size: 14px;
     letter-spacing: 1px;
 
     text-transform: uppercase;

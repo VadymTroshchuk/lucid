@@ -1,0 +1,43 @@
+
+@use "../abstracts/_functions.scss" as f;
+@use "../abstracts/_variables.scss" as v;
+@use "../abstracts/_mixins.scss" as m;
+
+.features{
+    padding-top: 40px;
+    &__container{
+
+    }
+    &__top-wrapper{
+        text-align: center;
+    }
+    &__list-container{
+        padding-top: 40px;
+    }
+    &__list-item__wrapper{
+        text-align: center;
+    }
+    &__icon-wrapper{
+
+    }
+    &__icon{
+        border-radius: 50%;
+        padding:20px;
+        border: 1px solid gray;
+    }
+    &__item-title{
+
+    }
+    &__item-text{
+        @include m.section-text;
+    }
+
+    &__sub-title{
+        @include m.sub-title;
+    }
+    &__title{
+        @include m.black-title;
+
+    }
+
+}
