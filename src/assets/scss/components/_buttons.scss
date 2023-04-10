@@ -1,0 +1,12 @@
+
+@use "../abstracts/_functions.scss" as f;
+@use "../abstracts/_variables.scss" as v;
+@use "../abstracts/_mixins.scss" as m;
+
+
+.button-primary{
+ @include m.button-primary;
+}
+.button-secondary{
+    @include m.button-secondary;
+}
