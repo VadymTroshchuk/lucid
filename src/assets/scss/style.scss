@@ -11,3 +11,16 @@
 @import "./layout/_features.scss";
 @import "./layout/_devices.scss";
 @import "./layout/_device.scss";
+
+@media (min-width: 1400px){
+  .container{
+    max-width: 1170px ;
+  }
+}
+
+@media (min-width: 1200px){
+  .container{
+    max-width: 1170px ;
+  }
+}
+

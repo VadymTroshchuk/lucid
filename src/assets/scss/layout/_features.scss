@@ -39,5 +39,28 @@
         @include m.black-title;
 
     }
-
+    &__icon-wrapper{
+        
+    }
+    &__icon{
+        // background-image: url("../images/Monitor.svg");
+        display: inline-block;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+    }
+    &__list-item__wrapper:nth-child(1) .features__icon{
+        background-image: url("../images/Monitor.svg");
+    }
+    &__list-item__wrapper:nth-child(2) .features__icon{
+        background-image: url("../images/settings.svg");
+    }
+    &__list-item__wrapper:nth-child(3) .features__icon{
+        background-image: url("../images/like.svg");
+    }
+    &__list-item__wrapper:nth-child(4) .features__icon{
+        background-image: url("../images/phone.svg");
+    }
 }
+
