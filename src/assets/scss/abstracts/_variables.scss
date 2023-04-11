@@ -1,6 +1,9 @@
 
+
+@import "./base/_typography.scss";
+
 :root{
-  --bs-body-font-family: 'Source Sans Pro', sans-serif;
+  --bs-body-font-family: 'Source Sans Pro';
 }
 $container-max-widths: (
   sm: 540px,
