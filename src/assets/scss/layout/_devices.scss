@@ -18,9 +18,32 @@
     &__icon-wrapper{
 
     }
-    &__icon{
-
+    &__item{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
     }
+    &__icon{  
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        width: 16px;
+        height: 16px;
+    }
+    &__items-wrapper &__item:nth-child(1) &__icon {
+        background-image: url(../images/cup.svg);
+    }
+    &__items-wrapper &__item:nth-child(2) &__icon {
+        background-image: url(../images/mouse.svg);
+    }
+
+    &__items-wrapper &__item:nth-child(3) &__icon {
+        background-image: url(../images/energy.svg);
+    }
+    &__items-wrapper &__item:nth-child(4) &__icon {
+        background-image: url(../images/speedometer.svg);
+    }
+
     &__item-title{
 
     }
