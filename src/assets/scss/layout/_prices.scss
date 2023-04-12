@@ -1,0 +1,61 @@
+
+@use "../abstracts/_functions.scss" as f;
+@use "../abstracts/_variables.scss" as v;
+@use "../abstracts/_mixins.scss" as m;
+@import "../base/_typography.scss";
+
+.prices{
+    background-image: url("../images/prices-bg.png"); 
+    width: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 30vh;
+    &__container{
+
+    }
+    &__top-wrapper{
+        text-align: center;
+    }
+    &__sub-title{
+        @include m.sub-title;
+      
+    }
+    &__title{
+        @include m.black-title;
+        color: v.$main-white-color;
+    }
+
+
+
+
+    &-slider{
+        overflow: hidden;
+    }
+    &__text{
+       @include m.slider-text; 
+    }
+    &__testimonal-text{
+        @include m.testimonal-text; 
+     }
+     &-content__wrapper{
+        display: flex;
+        flex-direction: row;
+     }
+     &-testimonal__wpapper{
+        display: flex;
+     }
+     &-testimonal-text__wrapper{
+        display: flex;
+        flex-direction: column;
+     }
+    &-testimonal__icon{
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        width: 59px;
+        height: 59px;
+        background-image: url(../images/testimonal-icon1.svg);
+    }
+}
+
