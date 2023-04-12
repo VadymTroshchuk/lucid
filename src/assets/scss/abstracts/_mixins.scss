@@ -15,9 +15,15 @@ letter-spacing: 1px;
     color: v.$title-color;
     letter-spacing: 1px;
     
+    font-family: v.$main-font;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+ 
     } 
 @mixin introduction-title{
-    font-family: v.$main-white-color;
+    font-family: v.$main-font;
     font-style: normal;
     font-weight: 400;
     font-size: 47px;
@@ -77,4 +83,17 @@ letter-spacing: 1px;
     display: flex;
     justify-content: center;
     font-size: 14px;
+}
+
+@mixin features-icon{
+    border-radius: 50%;
+    border: 1px solid #E0E0E0;
+    display: inline-block;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    padding: 45px;
 }

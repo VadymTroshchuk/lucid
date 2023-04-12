@@ -12,7 +12,7 @@
         text-align: center;
     }
     &__list-container{
-        padding-top: 40px;
+        padding-top: 109px
     }
     &__list-item__wrapper{
         text-align: center;
@@ -20,35 +20,31 @@
     &__icon-wrapper{
 
     }
-    &__icon{
-        border-radius: 50%;
-        padding:20px;
-        border: 1px solid gray;
-    }
+   
     &__item-title{
-
+        padding-top: 24px;
     }
     &__item-text{
         @include m.section-text;
+        padding: 10px 19px 0px 19px;
     }
 
     &__sub-title{
         @include m.sub-title;
+        padding-top: 20px;
     }
     &__title{
         @include m.black-title;
-
+        padding-top: 12px;
     }
     &__icon-wrapper{
         
     }
     &__icon{
-        // background-image: url("../images/Monitor.svg");
-        display: inline-block;
-        background-repeat: no-repeat;
-        align-items: center;
-        justify-content: center;
-        background-position: center;
+ 
+    }
+    &__icon{
+    @include m.features-icon;
     }
     &__list-item__wrapper:nth-child(1) .features__icon{
         background-image: url("../images/monitor.svg");
@@ -64,3 +60,29 @@
     }
 }
 
+
+.lines{
+    position: relative;
+    transition: all 0.25s;
+}
+
+.lines:after{
+      content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: v.$main-blue-color;
+  bottom: -32px;
+  left: 2px;
+  transition: .8s;
+}
+.lines:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: v.$main-blue-color;
+    bottom: -32px;
+    left: -22px;
+    transition: 0.8s;
+}
