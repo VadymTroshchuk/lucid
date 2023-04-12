@@ -18,10 +18,28 @@
     &__icon-wrapper{
 
     }
+    &__content-wrapper{
+        padding-top: 170px;
+    }
+    &-img{
+        width: auto;
+        height: 616px;
+        margin-top: 125px;
+        margin-left: 22px;
+    }
+    &__items-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        padding-top: 19px;
+    }
     &__item{
         display: flex;
         flex-direction: row;
         gap: 15px;
+    }
+    &__item-text{
+        margin: 0;
     }
     &__icon{  
         background-repeat: no-repeat;
@@ -53,13 +71,17 @@
 
     &__sub-title{
         @include m.sub-title;
+        font-size: 15px;
     }
     &__title{
         @include m.black-title;
-        
+        text-align: left;
+        padding-top: 10px;
     }  
     &__text{
-        @include m.section-text
+        @include m.section-text;
+        padding-top: 52px;
+        max-width: 485px;
     } 
 
 }
