@@ -10,9 +10,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 30vh;
+    height: 639px;
     &__container{
-
+    padding-top: 60px;
     }
     &__top-wrapper{
         text-align: center;
@@ -24,16 +24,36 @@
     &__title{
         @include m.black-title;
         color: v.$main-white-color;
+        padding-top: 10px;
     }
-
-
-
 
     &-slider{
         overflow: hidden;
+        padding-top: 120px;
+    }   
+    .swiper-pagination{
+        gap: 12px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 52px;
+    }
+    &-slider .swiper-pagination-bullet{
+        width: 7px;
+        height: 7px;
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+
+    }
+    &-slider .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        width: 14px; 
+        height: 14px;
+        background: #FFFFFF;
     }
     &__text{
        @include m.slider-text; 
+       padding-right: 26px;  
     }
     &__testimonal-text{
         @include m.testimonal-text; 
@@ -44,10 +64,14 @@
      }
      &-testimonal__wpapper{
         display: flex;
+        gap: 21px;
+        padding-top: 10px;
      }
      &-testimonal-text__wrapper{
         display: flex;
         flex-direction: column;
+        padding-top: 5px;
+        gap: 9px;
      }
     &-testimonal__icon{
         background-repeat: no-repeat;
