@@ -116,6 +116,14 @@ letter-spacing: 1px;
     font-size: 15px;
     line-height: 19px;
     color: v.$main-white-color;
-    
-    
+}
+
+@mixin prices-bottom-title{
+    font-family: v.$main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+
 }

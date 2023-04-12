@@ -83,3 +83,27 @@
     }
 }
 
+
+.prices__bottom-content{
+    background: #15141A;
+  
+}
+.prices__bottom-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 170px;
+    gap: 160px;
+}
+
+.prices__bottom-title{
+    @include m.prices-bottom-title;
+}
+.prices__bottom-title span {
+    font-weight: 100;
+  }
+
+.prices__btn-container{
+    display: flex;
+    gap: 19px;
+}
