@@ -5,6 +5,8 @@
 @import "../base/_typography.scss";
 .device{
     background-color: v.$background-gray-color;
+    margin-top: 20px;
+    padding-bottom: 20px;
     &__item-text{
         @include m.section-text;
     }
@@ -14,9 +16,22 @@
     }
     &__title{
         @include m.black-title;
-        
+        text-align: left;
+        padding-top: 10px;
     }   
     &__text{
-        @include m.section-text
+        @include m.section-text;
+        margin-right: -38px;
     } 
+    &__container{
+        display: flex;
+        padding-top: 130px;
+    }
+    &__img-container{
+
+    }
+    &__img{
+    margin-top: -96px;
+    margin-right: -19px;
+    }
 }
