@@ -1,59 +1,80 @@
+@use "../abstracts/_functions.scss" as f;
+@use "../abstracts/_variables.scss" as v;
+
 @import "../../../../node_modules/bootstrap/scss/_mixins";
     // line-height: 48px;
-@mixin white-title{
+
+    @mixin white-title{
 font-size: 48px;
-color:  #ffffff;
+color:  v.$header-title-color;
 letter-spacing: 1px;
 
 } 
 @mixin black-title{
     font-size: 36px;
-    color:  #000000;
+    color: v.$title-color;
     letter-spacing: 1px;
     
     } 
+@mixin introduction-title{
+    font-family: v.$main-white-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 111.02%;
+    color: v.$main-white-color;
+    letter-spacing: 1.1px;
+
+}
 @mixin sub-title{
     font-size: 14px;
     letter-spacing: 1px;
-
     text-transform: uppercase;
-    color: #008ed6;
+    color: v.$sub-title-color;
     font-weight: 700;
-    font-family: "Source Sans Pro";
+    font-family: v.$main-font;
 }
 @mixin section-text{
-    font-size: 12px ;
-    opacity: 0.7;
-    font-weight: 300;
-    font-family: Source Sans Pro;
-    color: #A9A9A9;
-    letter-spacing: 1px;
+    font-family: v.$main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    color: v.$section-text-color;
 }
 
 @mixin button-primary{
-    font-size: 12px;
+    font-size: 14px;
     line-height: 48px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Source Sans Pro";
+    font-family: v.$main-font;
     text-align: center;
     width: 160px;
     height: 50px;
     filter: drop-shadow(0 0 1.5px rgba(3,3,3,0.1));
-    background-color: #008ed6;
+    background-color: v.$main-blue-color;
     border: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
 }
 @mixin button-secondary{
-    font-size: 12px;
+    font-size: 14px;
     line-height: 48px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Source Sans Pro";
+    font-family: v.$main-font;
     text-align: center;
     width: 160px;
     height: 50px;
     background-color: rgba(0,142,214,0);
     border: 1px solid rgba(255,255,255,0.2);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
 }
