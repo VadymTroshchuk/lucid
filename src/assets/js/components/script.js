@@ -4,11 +4,7 @@ new Swiper ('.prices-slider' , {
         clickable: true,
     },
     grabCursor: true,
-
-    mousewheel: {
-        sensitivity: 1,
-    },
-
+    
     loop: true,
 
     autoplay: {

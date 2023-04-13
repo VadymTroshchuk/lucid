@@ -6,12 +6,14 @@
 @import "./abstracts/_variables.scss";
 @import "./abstracts/_mixins.scss";
 @import "./components/_buttons.scss";
+@import "./components/_cards.scss";
 @import "./base/_reset.scss";
 @import "./layout/_header.scss";
 @import "./layout/_features.scss";
 @import "./layout/_devices.scss";
 @import "./layout/_device.scss";
 @import "./layout/_prices.scss";
+@import "./layout/_pricing-plans.scss";
 
 @media (min-width: 1400px){
   .container{

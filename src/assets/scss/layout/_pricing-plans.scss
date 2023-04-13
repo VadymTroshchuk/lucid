@@ -1,0 +1,25 @@
+
+@use "../abstracts/_functions.scss" as f;
+@use "../abstracts/_variables.scss" as v;
+@use "../abstracts/_mixins.scss" as m;
+@import "../base/_typography.scss";
+
+.pricing-plans{
+
+    &__container{
+        padding-top: 55px;
+    }
+        &__top-wrapper{
+            text-align: center;
+        }
+        &__sub-title{
+            @include m.sub-title;
+          
+        }
+        &__title{
+            @include m.black-title;
+            padding-top: 10px;
+        }
+}       
+
+
