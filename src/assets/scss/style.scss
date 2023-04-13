@@ -7,6 +7,7 @@
 @import "./abstracts/_mixins.scss";
 @import "./components/_buttons.scss";
 @import "./components/_cards.scss";
+@import "./components/_form.scss";
 @import "./base/_reset.scss";
 @import "./layout/_header.scss";
 @import "./layout/_features.scss";
@@ -14,6 +15,7 @@
 @import "./layout/_device.scss";
 @import "./layout/_prices.scss";
 @import "./layout/_pricing-plans.scss";
+@import "./layout/_contacts.scss";
 
 @media (min-width: 1400px){
   .container{

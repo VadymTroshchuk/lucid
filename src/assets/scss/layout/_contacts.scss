@@ -1,0 +1,58 @@
+@use "../abstracts/_functions.scss" as f;
+@use "../abstracts/_variables.scss" as v;
+@use "../abstracts/_mixins.scss" as m;
+@import "../base/_typography.scss";
+
+
+
+
+.contacts{
+    background-color: v.$background-gray-color;
+    &__container{
+    
+    }
+    &__top-wrapper{
+        text-align: center;
+        padding-top: 57px;
+    }
+    &__title{
+        @include m.black-title;
+        padding-top: 10px;
+    }
+    &__sub-title{
+        @include m.sub-title;
+    }
+    &__items-container{
+        text-align: initial;
+        padding-top: 90px;
+    }
+    &__icon-wrapper{
+
+    }
+    &__icon{  
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        width: 31px;
+        background-image: url(../images/phone.svg);
+        height: 32px;
+    }
+    &__item{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 26px;
+    }
+    &__item-text__wrapper{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    &__item-text{
+        @include m.section-text; 
+
+
+    }
+
+}

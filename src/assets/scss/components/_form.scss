@@ -1,0 +1,39 @@
+@use "../abstracts/_functions.scss" as f;
+@use "../abstracts/_variables.scss" as v;
+@use "../abstracts/_mixins.scss" as m;
+@import "../base/_typography.scss";
+
+form{
+    max-width: 960px;
+    background: v.$background-black-color;
+    border-radius: 2px;
+    padding: 66px 115px 59px;
+    position: relative;
+    &__wrapper form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__input-left{
+
+    }
+    &__input-right{
+
+    }
+    &__input input{
+        display: block;
+        width: 100%;
+        background: #f2f2f2;
+        border-radius: 2px;
+        font-size: 20px;
+        color: #686868;
+        line-height: 1.2;
+        padding: 0 28px;
+        margin-top: 10px;
+        height: 63px;
+    }
+    &__input-wrapper{
+        
+    }
+}
