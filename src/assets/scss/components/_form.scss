@@ -3,37 +3,73 @@
 @use "../abstracts/_mixins.scss" as m;
 @import "../base/_typography.scss";
 
-form{
-    max-width: 960px;
-    background: v.$background-black-color;
-    border-radius: 2px;
-    padding: 66px 115px 59px;
+.form{
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
     position: relative;
-    &__wrapper form{
-        width: 100%;
+    top: 65px;
+    &__wrapper{
+        max-width: 770px;
+        background: #15141a;
+        border-radius: 2px;
+        position: relative;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        padding-top: 49px;
+        padding-left: 66px;
+        padding-bottom: 40px;
+        row-gap: 0px;
+        column-gap: 17px;
+
     }
     &__input-left{
-
+        max-width: 300px;
+        padding: 0;
     }
     &__input-right{
 
+        padding: 0;
     }
-    &__input input{
-        display: block;
-        width: 100%;
-        background: #f2f2f2;
-        border-radius: 2px;
-        font-size: 20px;
-        color: #686868;
-        line-height: 1.2;
-        padding: 0 28px;
-        margin-top: 10px;
-        height: 63px;
+    input &__input {
+ 
     }
     &__input-wrapper{
-        
+  
     }
+}
+
+        
+
+.form__input-wrapper .form__input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #686868;
+    line-height: 1.2;
+    padding: 0 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form__input-right .form__input-wrapper:nth-of-type(1) textarea.form__input{
+    height: 190px;
+    max-width: 300px;
+    padding-top: 14px;
+    resize: none;
+}
+
+
+.form__input-wrapper .form__input::placeholder,
+textarea.form__input::placeholder  {
+    color:  rgba(255, 255, 255, 0.2);
+    font-size: 15px;
+}
+
+
+.button-contacts{
+    margin-left: 459px;
 }
