@@ -74,9 +74,14 @@ textarea.form__input::placeholder  {
     margin-left: 459px;
 }
 
+.map{
+    background-color: v.$background-black-color;
+}
 
 .map__wrapper{
     width: 100%;
-    height: 360px;
+    height: 371px;
     border: none;
+    margin-bottom: -3px;
 }
+

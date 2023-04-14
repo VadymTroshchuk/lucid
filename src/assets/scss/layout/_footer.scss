@@ -1,0 +1,39 @@
+
+@use "../abstracts/_functions.scss" as f;
+@use "../abstracts/_variables.scss" as v;
+@use "../abstracts/_mixins.scss" as m;
+@import "../base/_typography.scss";
+
+
+.footer{
+    background-color: v.$background-black-color;
+    height: 160px;
+    &__container{
+        padding-top: 34px;
+    }
+    &__social-items{
+     
+    }
+    &__social-list__container{
+        max-width: 245px;
+    }
+    &__social-link{
+
+    }
+    &__social-item{
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        width: 59px;
+        height: 59px;
+        background-image: url(../images/icon-twitter.svg);
+        filter: invert(25%) sepia(1%) saturate(3332%) hue-rotate(211deg) brightness(90%) contrast(84%);
+    }
+    &__credits__wrapper{
+
+    }
+    &__credits{
+        @include footer-text;
+    }
+
+}

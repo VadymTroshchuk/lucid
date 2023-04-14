@@ -127,3 +127,14 @@ letter-spacing: 1px;
     color: #FFFFFF;
 
 }
+
+
+@mixin footer-text{
+    font-family: v.$main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #444348;
+}
