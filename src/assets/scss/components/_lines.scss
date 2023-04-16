@@ -1,8 +1,56 @@
-.lines{
-  position: relative;
-  transition: all 0.25s;
-}
+@use "../abstracts/_functions.scss" as f;
+@use "../abstracts/_variables.scss" as v;
+@use "../abstracts/_mixins.scss" as m;
 
+.lines{
+  &__features, &__about, &__device , &__testimonals , &__pricing-plans ,  &__contacts{
+    position: relative;
+    transition: all 0.25s;
+  }
+  &__features::before, &__about::before, &__device::before , &__testimonals::before , &__pricing-plans::before ,  &__contacts::before{
+    @include m.line-before
+  }
+  &__features::after, &__about::after, &__device::after , &__testimonals::after , &__pricing-plans::after ,  &__contacts::after{
+    @include m.line-after
+  }
+
+  &__about::after{
+    bottom: -26.8px;
+    left: 27px;
+  }
+  &__about::before{
+    bottom: -26.8px;
+    left: 4px;
+  }
+  &__device::before{
+    bottom: -25.8px;
+    left: 0px;
+  }
+  &__device::after{
+    bottom: -25.8px;
+    left: 24px;
+  }
+  &__testimonals::before{
+    bottom: -32.8px;
+  }  
+  &__testimonals::after{
+    bottom: -32.8px;
+  }
+  &__pricing-plans::before{
+    bottom: -30.8px;
+  }
+  &__pricing-plans::after{
+    bottom: -30.8px;
+  }
+  &__contacts::before{
+    bottom: -30.8px;
+  }
+  &__contacts::after{
+    bottom: -30.8px;
+  }
+
+
+}
 
 
 

@@ -4,6 +4,8 @@
 @use "../abstracts/_mixins.scss" as m;
 
 .features{
+    padding-bottom: 54px;
+    border-bottom: 1px solid #EDEDED;
     padding-top: 40px;
     &__container{
 
@@ -12,7 +14,9 @@
         text-align: center;
     }
     &__list-container{
-        padding-top: 109px
+        margin: 0;
+        padding: 0;
+        padding-top: 109px;
     }
     &__list-item__wrapper{
         text-align: center;

@@ -3,13 +3,24 @@
 
 
     // line-height: 48px;
+ 
 
-    @mixin white-title{
+@mixin white-title{
 font-size: 48px;
 color:  v.$header-title-color;
 letter-spacing: 1px;
 
 } 
+ @mixin header-subtitle{
+    font-family: v.$main-font;
+    font-style: normal;
+    font-size: 9px;
+    line-height: 10px;
+    letter-spacing: 2px;
+    opacity: 0.2;
+    color: v.$header-title-color;
+}  
+
 @mixin black-title{
     font-size: 36px;
     color: v.$title-color;
@@ -161,8 +172,8 @@ letter-spacing: 1px;
     width: 20px;
     height: 2px;
     background-color: v.$main-blue-color;
-    bottom: -32px;
-    left: 2px;
+    bottom: -34.8px;
+    left: 1px;
     transition: .8s;
   }
   @mixin line-before{
@@ -171,14 +182,11 @@ letter-spacing: 1px;
     width: 20px;
     height: 2px;
     background-color: v.$main-blue-color;
-    bottom: -32px;
+    bottom: -34.8px;
     left: -22px;
     transition: 0.8s;
   }
 
 
-  .lines{
-    position: relative;
-    transition: all 0.25s;
-}
+
 
