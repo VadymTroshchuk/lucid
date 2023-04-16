@@ -1,0 +1,61 @@
+@use "../abstracts/_functions.scss" as f;
+@use "../abstracts/_variables.scss" as v;
+@use "../abstracts/_mixins.scss" as m;
+
+
+.slider{
+  overflow: hidden;
+  padding-top: 120px;
+  &-content__wrapper{
+      display: flex;
+      flex-direction: row;
+   }
+   &__text{
+      @include m.slider-text; 
+      padding-right: 26px;  
+   }
+   &-testimonal__wrapper{
+      display: flex;
+      gap: 21px;
+      padding-top: 10px;
+   }
+   &-testimonal__icon{
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      width: 59px;
+      height: 59px;
+      background-image: url(../images/testimonal-icon1.svg);
+  }
+  &-testimonal-text__wrapper{
+      display: flex;
+      flex-direction: column;
+      padding-top: 5px;
+      gap: 9px;
+   }
+    
+      &__testimonal-text{
+      @include m.testimonal-text; 
+   }
+   & .swiper-pagination-bullet{
+      width: 7px;
+      height: 7px;
+      background-color: transparent;
+      border: 1px solid #FFFFFF;
+  }
+  & .swiper-pagination-bullet.swiper-pagination-bullet-active{
+      width: 14px; 
+      height: 14px;
+      background: #FFFFFF;
+  }
+
+}  
+
+.swiper-pagination{
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 52px;
+}

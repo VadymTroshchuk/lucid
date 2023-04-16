@@ -1,4 +1,4 @@
-new Swiper ('.prices-slider' , {
+new Swiper ('.slider' , {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -7,13 +7,13 @@ new Swiper ('.prices-slider' , {
     
     loop: true,
 
-    autoplay: {
-        delay: 5000,
+    // autoplay: {
+    //     delay: 5000,
 
-        stopOnLastSlide:false,
+    //     stopOnLastSlide:false,
 
-        disableOnInteraction: false,
-    },
+    //     disableOnInteraction: false,
+    // },
 
 
     speed: 800,

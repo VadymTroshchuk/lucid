@@ -1,8 +1,17 @@
 @use "../abstracts/_functions.scss" as f;
 @use "../abstracts/_variables.scss" as v;
 @use "../abstracts/_mixins.scss" as m;
-@import "../base/_typography.scss";
 
 
 
 
+.map{
+  background-color: v.$background-black-color;
+}
+
+.map__wrapper{
+  width: 100%;
+  height: 371px;
+  border: none;
+  margin-bottom: -3px;
+}

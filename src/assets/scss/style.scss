@@ -1,6 +1,9 @@
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+// @import "node_modules/bootstrap/scss/bootstrap-grid";
+
+@import "./base/_reset.scss";
 @import "./base/_typography.scss";
 @import "./abstracts/_functions.scss";
 @import "./abstracts/_variables.scss";
@@ -8,15 +11,18 @@
 @import "./components/_buttons.scss";
 @import "./components/_cards.scss";
 @import "./components/_form.scss";
-@import "./base/_reset.scss";
+@import "./components/_slider.scss";
+@import "./components/_map.scss";
 @import "./layout/_header.scss";
+@import "./layout/_introduction.scss";
 @import "./layout/_features.scss";
-@import "./layout/_devices.scss";
+@import "./layout/_about.scss";
 @import "./layout/_device.scss";
-@import "./layout/_prices.scss";
+@import "./layout/_testimonals.scss";
 @import "./layout/_pricing-plans.scss";
 @import "./layout/_contacts.scss";
 @import "./layout/_footer.scss";
+
 @media (min-width: 1400px){
   .container{
     max-width: 1170px ;
@@ -31,5 +37,9 @@
 
 .container{
   padding: 0 !important;
+}
+
+html, body{
+  transition-duration: .5s;
 }
 

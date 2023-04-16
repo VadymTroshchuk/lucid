@@ -1,0 +1,41 @@
+
+@use "../abstracts/_functions.scss" as f;
+@use "../abstracts/_variables.scss" as v;
+@use "../abstracts/_mixins.scss" as m;
+
+
+
+
+.introduction{
+  &__content{
+    padding-top: 30px;
+  }
+  &__container{
+    gap: 243px;
+    padding-top: 51px;  
+  }
+  &__title{
+    @include m.introduction-title;
+    padding-top: 17px;
+    margin-right: -28px;
+  }
+  &__sub-title{
+    @include m.sub-title; 
+    font-size: 14.5px;
+  }
+  &__text{
+    @include m.section-text;
+    margin-right: -27px;
+    padding-top: 20px;
+    max-width: 480px;
+  
+  }
+  &__btn-container{
+    display: flex;
+    gap: 20px;
+    padding-top: 43px;
+  }
+}
+
+
+

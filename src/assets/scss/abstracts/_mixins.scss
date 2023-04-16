@@ -1,7 +1,7 @@
 @use "../abstracts/_functions.scss" as f;
 @use "../abstracts/_variables.scss" as v;
 
-@import "../../../../node_modules/bootstrap/scss/_mixins";
+
     // line-height: 48px;
 
     @mixin white-title{
@@ -138,3 +138,47 @@ letter-spacing: 1px;
     text-align: center;
     color: #444348;
 }
+
+
+
+
+@mixin font-face($family, $filename, $weight: normal, $style: normal) {
+    @font-face {
+      font-family: $family;
+      src: url('../fonts/#{$filename}.woff2') format('woff2'),
+           url('../fonts/#{$filename}.woff') format('woff'),
+           url('../fonts/#{$filename}.ttf') format('truetype');
+      font-weight: $weight;
+      font-style: $style;
+    }
+  }
+
+  
+
+  @mixin line-after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: v.$main-blue-color;
+    bottom: -32px;
+    left: 2px;
+    transition: .8s;
+  }
+  @mixin line-before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: v.$main-blue-color;
+    bottom: -32px;
+    left: -22px;
+    transition: 0.8s;
+  }
+
+
+  .lines{
+    position: relative;
+    transition: all 0.25s;
+}
+

@@ -1,0 +1,56 @@
+
+@use "../abstracts/_functions.scss" as f;
+@use "../abstracts/_variables.scss" as v;
+@use "../abstracts/_mixins.scss" as m;
+
+
+.testimonals{
+    background-image: url("../images/prices-bg.png"); 
+    width: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 639px;
+    &__container{
+    padding-top: 60px;
+    }
+    &__top-wrapper{
+        text-align: center;
+    }
+    &__sub-title{
+        @include m.sub-title;
+      
+    }
+    &__title{
+        @include m.black-title;
+        color: v.$main-white-color;
+        padding-top: 10px;
+    }
+    &__bottom-content{
+        background: #15141A;
+    
+    }
+    &__bottom-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 170px;
+        gap: 160px;
+    }
+    &__bottom-title{
+        @include m.prices-bottom-title;
+    }
+    &__bottom-title span {
+        font-weight: 100;
+    }
+    &__btn-container{
+        display: flex;
+        gap: 19px;
+    }
+}
+
+
+
+
+
+

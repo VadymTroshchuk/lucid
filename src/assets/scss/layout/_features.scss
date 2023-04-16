@@ -2,7 +2,7 @@
 @use "../abstracts/_functions.scss" as f;
 @use "../abstracts/_variables.scss" as v;
 @use "../abstracts/_mixins.scss" as m;
-@import "../base/_typography.scss";
+
 .features{
     padding-top: 40px;
     &__container{
@@ -61,28 +61,3 @@
 }
 
 
-.lines{
-    position: relative;
-    transition: all 0.25s;
-}
-
-.lines:after{
-      content: "";
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  background-color: v.$main-blue-color;
-  bottom: -32px;
-  left: 2px;
-  transition: .8s;
-}
-.lines:before{
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    background-color: v.$main-blue-color;
-    bottom: -32px;
-    left: -22px;
-    transition: 0.8s;
-}

@@ -1,7 +1,6 @@
 @use "../abstracts/_functions.scss" as f;
 @use "../abstracts/_variables.scss" as v;
 @use "../abstracts/_mixins.scss" as m;
-@import "../base/_typography.scss";
 
 .form{
     display: flex;
@@ -36,52 +35,43 @@
     &__input-wrapper{
   
     }
+    &__input-wrapper &__input {
+        display: block;
+        width: 100%;
+        background: transparent;
+        border-radius: 2px;
+        font-size: 20px;
+        color: #686868;
+        line-height: 1.2;
+        padding: 0 16px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    &__input-right &__input-wrapper:nth-of-type(1) textarea.form__input{
+        height: 190px;
+        max-width: 300px;
+        padding-top: 14px;
+        resize: none;
+    }
+    
+    
+    &__input-wrapper &__input::placeholder,
+    textarea.form__input::placeholder  {
+        color:  rgba(255, 255, 255, 0.2);
+        font-size: 15px;
+    }
 }
 
         
 
-.form__input-wrapper .form__input {
-    display: block;
-    width: 100%;
-    background: transparent;
-    border-radius: 2px;
-    font-size: 20px;
-    color: #686868;
-    line-height: 1.2;
-    padding: 0 16px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
 
-.form__input-right .form__input-wrapper:nth-of-type(1) textarea.form__input{
-    height: 190px;
-    max-width: 300px;
-    padding-top: 14px;
-    resize: none;
-}
-
-
-.form__input-wrapper .form__input::placeholder,
-textarea.form__input::placeholder  {
-    color:  rgba(255, 255, 255, 0.2);
-    font-size: 15px;
-}
 
 
 .button-contacts{
     margin-left: 459px;
 }
 
-.map{
-    background-color: v.$background-black-color;
-}
-
-.map__wrapper{
-    width: 100%;
-    height: 371px;
-    border: none;
-    margin-bottom: -3px;
-}
 
