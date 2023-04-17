@@ -22,9 +22,8 @@
   &__bg{
     background-image: url("../images/header-bg.png"); 
     width: 100%; 
-
-    background-size: cover;
-    position: relative;
+    background-size: 100% 100%;
+ 
   }
   &__nav{
     gap: 27px;
@@ -44,3 +43,15 @@
   
 }
 
+
+
+@media (max-width: 767px){
+  
+.header{
+
+  &__nav{
+    display: none !important;
+  }
+}
+
+  }

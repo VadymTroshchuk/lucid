@@ -5,7 +5,7 @@
 
 .about{
     padding-top: 40px;
-    &__container{
+    &-container{
 
     }
 
@@ -19,12 +19,12 @@
 
     }
     &__content-wrapper{
-        padding-top: 115px;
+      padding-top: 76px;
     }
     &-img{
         width: auto;
         height: 616px;
-        margin-top: 65px;
+        margin-top: 31px;
         margin-left: 22px;
     }
     &__items-wrapper{
@@ -85,4 +85,35 @@
     } 
 
 }
+
+@media (max-width: 991px){
+  .about{
+
+  &-img{
+    width: auto;
+    height: 560px;
+    margin-top: 31px;
+    margin-left: 22px;
+    margin-left: -20px;
+  }
+}
+}
+
+@media (max-width: 576px){
+  
+  .about{
+    &-container{
+      flex-direction: column;
+    }
+
+    &-img{
+      margin: 0;
+      height: auto;
+      width: 100%;
+      margin-top: 31px;
+    }
+  }
+}
+
+
 

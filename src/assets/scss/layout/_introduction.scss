@@ -37,5 +37,70 @@
   }
 }
 
+@media (max-width: 1199px){
+  .introduction{
+    &__content{
 
+    }
+    &__container{
+      gap: 100px;
+    }
+    &__title{
+ 
+    }
+    &__sub-title{
+  
+    }
+    &__text{
+ 
+    
+    }
+    &__btn-container{
+     
+    }
+  }
+}
+
+
+@media (max-width: 767px){
+  .introduction{
+    &__content{
+
+    }
+    &__container{
+   
+    }
+    &__title{
+ 
+    }
+    &__sub-title{
+  
+    }
+    &__text{
+ 
+    
+    }
+    &__btn-container{
+     
+    }
+  }
+}
+
+
+@media (max-width: 452px){
+  .introduction{
+    &__img{
+      width: 95%;
+    }
+  }
+}
+
+
+.button {
+	position: relative;
+	transition: 0.5s ease;
+	z-index: 1;
+	overflow: hidden;
+  
+}
 
