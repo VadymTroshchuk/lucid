@@ -14,11 +14,10 @@
         border-radius: 2px;
         position: relative;
         display: flex;
-        padding-top: 49px;
-        padding-left: 66px;
-        padding-bottom: 40px;
+        padding: 49px 84px 40px 66px;
         row-gap: 0px;
-        column-gap: 17px;
+        justify-content: space-between;
+
 
     }
     &__input-left{
@@ -26,7 +25,7 @@
         padding: 0;
     }
     &__input-right{
-
+        max-width: 300px;
         padding: 0;
     }
     input &__input {
@@ -65,13 +64,45 @@
     }
 }
 
-        
 
 
 
 
 .button-contacts{
-    margin-left: 459px;
+    margin-left: auto;
+}
+
+
+@media (max-width: 991px){
+    .form{
+        &__wrapper{
+
+        }
+        &__input-left{
+        width: 45%;
+        }
+    
+    }
+}
+
+
+@media (max-width: 767px){
+    .form{
+        &__wrapper{
+            padding: 30px;
+            max-width: 100%;
+        }
+        &__input-left{
+        width: 45%;
+        }
+        &__input-right{
+ 
+        }
+
+    }
+    .button-contacts{
+        margin-left: auto;
+    }
 }
 
 

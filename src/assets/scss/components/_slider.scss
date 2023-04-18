@@ -12,12 +12,15 @@
    }
    &__text{
       @include m.slider-text; 
-      padding-right: 26px;  
+      padding-right: 33px;
    }
    &-testimonal__wrapper{
       display: flex;
       gap: 21px;
       padding-top: 10px;
+   }
+   &__item-wrapper{
+      max-width: 600px;
    }
    &-testimonal__icon{
       background-repeat: no-repeat;
@@ -52,10 +55,65 @@
 }  
 
 .swiper-pagination{
-  gap: 12px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 52px;
+   gap: 15px;
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: center;
+   margin-bottom: 50px;
 }
+
+
+
+@media (max-width: 991px){
+   .slider{
+      &__slide{
+
+      }
+
+   }
+}
+
+
+@media (max-width: 767px){
+   .slider{
+      &__slide{
+       
+      }
+      &__item-wraper{
+         margin-right: 10px;
+      }
+      &-content__wrapper{
+         flex-direction: column;
+       }
+       &__text{
+      font-size: 20px;
+      line-height: 28px;
+      padding-right: 0px;
+       }
+    
+   }
+}
+
+@media (max-width: 767px){
+   .slider__item-wrapper{
+      margin-right: 10px;
+   }
+}
+
+
+
+
+
+@media (max-width: 350px){
+   .slider{
+      padding-top: 70px;   
+      &-pagination{
+         margin-bottom: 50px;
+      }
+
+   }
+}
+
+
+

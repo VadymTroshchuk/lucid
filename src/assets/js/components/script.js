@@ -7,6 +7,8 @@ new Swiper ('.slider' , {
     
     loop: true,
 
+    spaceBetween: 20,
+
     // autoplay: {
     //     delay: 5000,
 

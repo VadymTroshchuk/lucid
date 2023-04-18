@@ -6,7 +6,7 @@
 .device{
     background-color: v.$background-gray-color;
     margin-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
     &__item-text{
         @include m.section-text;
     }
@@ -34,5 +34,54 @@
     &__img{
     margin-top: -96px;
     margin-right: -19px;
+    }
+}
+
+
+@media (max-width: 1206px){
+    .device{
+        &__container{
+      
+        }
+        &__img{
+            margin-right: -15px;
+            margin-top: 0px;
+        }
+        &__text{
+
+            margin-right: 0px;
+        }
+    }
+}
+
+
+@media (max-width: 767px){
+    .device{
+        &__container{
+  
+        }
+        &__img-container{
+            display: flex;
+            justify-content: center;
+        }
+        &__img{
+            
+        }
+        &__text{
+
+        }
+    }
+}
+
+
+@media (max-width: 731px){
+    .device{
+        &__container{
+            flex-direction: column;
+        }
+        &__img{
+            margin-right: 0px;
+            width: 100%;
+        }
     }
 }
