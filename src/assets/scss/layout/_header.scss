@@ -29,6 +29,8 @@
     gap: 27px;
   }
 
+
+
 }
 
 .navbar
@@ -40,8 +42,41 @@
   &-brand{
     gap: 7px;
   }
-  
+  &__link{
+    position: relative;
+
+  }
+
+
+ &__item &__link::before{
+    @include m.line-before;
+    bottom: -9.8px;
+    left: 0px;
+    width: 0px;
+    transition: 0.8s;
+  }
+  &__item &__link::after{
+    @include m.line-after;
+    bottom: -9.8px;
+    left: auto;
+    right: -4px;
+    width: 0px;
+    transition: 0.5s;
+  }
+
+  &__item:hover &__link::after {
+    width: 45%;
+  }
+  &__item:hover  &__link::before {
+    
+    width: 45%;
+  }
+  &__link:hover{
+    color: #fffefe;
+  }
 }
+
+
 
 
 
