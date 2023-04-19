@@ -24,6 +24,12 @@
     border: 1px solid transparent;
     
 }
+.hover-efect{
+	position: relative;
+	transition: 0.5s ease;
+	z-index: 1;
+	overflow: hidden;
+} 
 ._btn {
 	position: relative;
 	transition: 0.5s ease;
@@ -31,8 +37,27 @@
 	overflow: hidden;
 }
 
+
 ._btn::after,
 ._btn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+    background-color: v.$main-blue-color;
+	transition: 0.7s ease;
+	z-index: -1;
+    
+}
+.hover-efect{
+	position: relative;
+	transition: 0.5s ease;
+	z-index: 1;
+	overflow: hidden;
+} 
+.hover-efect::after,
+.hover-efect::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -70,3 +95,22 @@
 	content: "";
 	right: -70%;
 }
+
+
+
+
+
+// .hover-efect:hover::before,
+// .hover-efect:hover::after {
+// 	content: "";
+// 	height: 340%;
+// 	width: 214%;
+// }
+// .hover-efect:hover::before {
+// 	content: "";
+// 	left: -30%;
+// }
+// .hover-efect:hover::after {
+// 	content: "";
+// 	right: -70%;
+// }

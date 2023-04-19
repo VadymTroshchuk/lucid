@@ -1,3 +1,5 @@
+
+
 const mobNav = document.querySelector('.navbar__mob');
 const hamburger = document.querySelector('.hamburger');
 const hamburgerLine = document.querySelectorAll('.hamburger-line')
@@ -59,3 +61,13 @@ function hideMenuLink(e){   // Remove menu if click one of menu links //
   }
   
 };
+
+
+
+
+
+
+
+
+
+

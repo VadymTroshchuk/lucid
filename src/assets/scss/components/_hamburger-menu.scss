@@ -57,6 +57,46 @@
 
  
 
+ .navbar__link-mob{
+  position: relative;
+
+}
+
+
+.navbar__item-mob .navbar__link-mob::before{
+  @include m.line-before;
+  bottom: -9.8px;
+  left: 0px;
+  width: 0px;
+  transition: 0.8s;
+}
+.navbar__item-mob .navbar__link-mob::after{
+  @include m.line-after;
+  bottom: -9.8px;
+  left: auto;
+  right: -4px;
+  width: 0px;
+  transition: 0.5s;
+}
+
+.navbar__item-mob:hover .navbar__link-mob::after {
+  width: 45%;
+}
+.navbar__item-mob:hover  .navbar__link-mob::before {
+  
+  width: 45%;
+}
+.navbar__link-mob:hover{
+  color: #fffefe;
+}
+
+
+
+
+
+
+
+
  .navbar__mob{
   display: none;
   background: $background-black-color;
@@ -70,6 +110,7 @@
   z-index: 5;
   transition: 0.5s ease;
   }
+
   .navbar__mob.active{
     right: 0;
   }
@@ -102,3 +143,6 @@
       display: inline-block;
     }
   }
+
+
+  

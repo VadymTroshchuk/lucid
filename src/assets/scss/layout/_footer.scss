@@ -28,6 +28,11 @@
         height: 59px;
         background-image: url(../images/icon-twitter.svg);
         filter: invert(25%) sepia(1%) saturate(3332%) hue-rotate(211deg) brightness(90%) contrast(84%);
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+    &__social-item:hover{
+        filter: invert(44%) sepia(100%) saturate(722%) hue-rotate(157deg) brightness(93%) contrast(101%);
     }
     &__credits__wrapper{
 

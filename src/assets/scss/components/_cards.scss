@@ -15,6 +15,7 @@
         width: 271px;
         margin-left: 11px;
         padding-bottom: 14px;
+        cursor: pointer;
     }
     &-middle__wrapper{
         border-bottom: 1px solid #E0E0E0;
@@ -32,6 +33,7 @@
         background: transparent;
         border-bottom: 1px solid #E0E0E0;
         padding: 28px 0px 19px 0px;
+        transition: .7s ease;
     }
     &__title-wrapper{
         display: flex;
@@ -48,7 +50,7 @@
         text-align: center;
         color: #1A1A1A;
         padding-top: 11px;
-
+        transition: .9s ease;
     }
     &__price{
 
@@ -58,6 +60,7 @@
         line-height: 75px;
         text-align: center;
         color: #1A1A1A;
+        transition: .9s ease;
 
     }
     &__month{
@@ -68,7 +71,7 @@
         text-align: center;
         font-family: 'Source Sans Pro';
         color: #999999;
-        
+        transition: .9s ease;
     }
     &__bottom-content{
         text-align: center;
@@ -89,8 +92,9 @@
         padding-top: 27px;
         padding-bottom: 27px;
     }
-
+    
 }
+
 
 @media (max-width:1999px){
 
@@ -99,4 +103,99 @@
 
     }
                
+
 }
+
+
+
+
+
+//hover efect for card-wrapper
+
+.hover-efect{
+	position: relative;
+	transition: 0.5s ease;
+	z-index: 1;
+	overflow: hidden;
+} 
+.hover-efect::after,
+.hover-efect::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 115%;
+	height: 115%;
+    background-color: v.$main-blue-color;
+	transition: .7s ease;
+	z-index: -1;
+    
+}
+.hover-efect::after {
+	top: -70px;
+}
+.hover-efect::before {
+	content: "";
+	left: -109%;
+	transform: rotate(60deg);
+}
+.hover-efect::after {
+	content: "";
+	right: -105%;
+	transform: rotate(60deg);
+}
+
+
+
+.card-wrapper:hover 
+
+.card-wrapper:hover .hover-efect::before,
+.card-wrapper:hover .hover-efect::after { 
+    content: "";
+    height: 340%;
+    width: 214%;
+}
+.card-wrapper:hover .hover-efect::before { 
+    left: -30%;
+}
+.card-wrapper:hover .hover-efect::after { 
+    right: -70%;
+}
+
+.card-wrapper:hover ._btn::before,
+.card-wrapper:hover ._btn::after {
+    content: "";
+    height: 340%;
+    width: 150%;
+
+}
+.card-wrapper:hover ._btn::before {
+    content: "";
+    left: -30%;
+
+}
+.card-wrapper:hover ._btn::after {
+    content: "";
+    right: -70%;
+
+}
+// $main-blue-color;
+.card-wrapper:hover  .button-pricing{
+    color:  v.$main-white-color;
+}
+
+.card-wrapper:hover .card__dollar {  
+    color: v.$main-white-color;
+}
+
+.card-wrapper:hover .card__price  {  
+    color: v.$main-white-color;
+}
+
+.card-wrapper:hover .card__month  {  
+    color:  v.$main-white-color;
+}
+.card-wrapper:hover  .card-header__title{
+   color: $main-blue-color;
+}
+
+

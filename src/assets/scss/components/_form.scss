@@ -31,8 +31,15 @@
     input &__input {
  
     }
-    &__input-wrapper{
-  
+    &__input-wrapper {
+        position: relative;
+    }
+    &__input-wrapper span{
+        color: red;
+        position: absolute;
+        top: -18px;
+        right: 10px;
+        font-size: 14px;
     }
     &__input-wrapper &__input {
         display: block;
@@ -49,6 +56,8 @@
         border: 1px solid rgba(255, 255, 255, 0.2);
         outline: none;
         transition: all .5s;
+        
+        cursor: pointer;
     }
   
     
@@ -66,21 +75,39 @@
         color:  rgba(255, 255, 255, 0.2);
         font-size: 15px;
 
-        transition: color 0.4s ease;
+        transition: all .5s;
     }
     &__input-wrapper &__input:focus {
         border: 1px solid v.$main-blue-color;
+        cursor: text;
     }
         
     &__input-wrapper &__input:focus::placeholder,
     textarea.form__input:focus::placeholder  {
         color: transparent;
+
     }
+
+
+    &__input-wrapper &__input:hover:not(:focus)::placeholder,
+    textarea.form__input:hover:not(:focus)::placeholder {
+      color: v.$main-blue-color;
+    
+    }
+
+
+
   
 }
 
+#sumbmit-error{
+    color: red;
+    position: absolute;
+}
 
-
+.form-wrapper span{
+    color: red;
+}
 
 
 
