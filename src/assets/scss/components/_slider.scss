@@ -28,8 +28,12 @@
       display: block;
       width: 59px;
       height: 59px;
-      background-image: url(../images/testimonal-icon1.svg);
+      background-size: contain;
   }
+  &-testimonal__wrapper:nth-child(2) .slider-testimonal__icon{
+
+}
+ 
   &-testimonal-text__wrapper{
       display: flex;
       flex-direction: column;
@@ -39,7 +43,7 @@
     
       &__testimonal-text{
       @include m.testimonal-text; 
-   }
+   };
    & .swiper-pagination-bullet{
       width: 7px;
       height: 7px;
@@ -53,6 +57,16 @@
   }
 
 }  
+
+.slider-testimonal__icon--first{
+   background-image: url(../images/testimonal-icon1.svg);
+ }
+ .slider-testimonal__icon--second{
+   background-image: url(../images/testimonal-icon2.svg);
+ }
+
+
+
 
 .swiper-pagination{
    gap: 15px;
@@ -73,6 +87,8 @@
 
    }
 }
+
+
 
 
 @media (max-width: 767px){

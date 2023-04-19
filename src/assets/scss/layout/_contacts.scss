@@ -34,9 +34,19 @@
         background-repeat: no-repeat;
         background-position: center;
         display: block;
-        width: 31px;
-        background-image: url(../images/phone.svg);
-        height: 32px;
+        width: 34px;
+        height: 33px;
+        filter: invert(44%) sepia(100%) saturate(722%) hue-rotate(157deg) brightness(93%) contrast(101%);
+    }
+
+    &__item:nth-child(1) .contacts__icon{
+        background-image: url("../images/phone.svg");
+    }
+    &__item:nth-child(2) .contacts__icon{
+        background-image: url("../images/pointer.svg");
+    }
+    &__item:nth-child(3) .contacts__icon{
+        background-image: url("../images/mail.svg");
     }
     &__item{
         display: flex;

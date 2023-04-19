@@ -12,7 +12,7 @@
         padding-top: 34px;
     }
     &__social-items{
-     
+        gap: 20px;
     }
     &__social-list__container{
         max-width: 245px;
@@ -24,13 +24,32 @@
         background-repeat: no-repeat;
         background-position: center;
         display: block;
-        width: 59px;
-        height: 59px;
-        background-image: url(../images/icon-twitter.svg);
+        background-image: url(../images/icon-dribbble.svg);
+        background-size: contain;
+        width: 22px;
+        height: 22px;
         filter: invert(25%) sepia(1%) saturate(3332%) hue-rotate(211deg) brightness(90%) contrast(84%);
         cursor: pointer;
         transition: all .5s ease;
+        margin-top: 22px;
+        margin-bottom: 21px;
     }
+    &__social-item:nth-child(1) {
+        background-image: url(../images/icon-behance.svg);
+    }
+    &__social-item:nth-child(2) {
+        background-image: url(../images/icon-dribbble.svg);
+    }
+    &__social-item:nth-child(3) {
+        background-image: url(../images/icon-twitter.svg);
+    }
+    &__social-item:nth-child(4) {
+        background-image: url(../images/icon-facebook.svg);
+    }
+    &__social-item:nth-child(5) {
+        background-image: url(../images/icon-linkedin.svg);
+    }
+      
     &__social-item:hover{
         filter: invert(44%) sepia(100%) saturate(722%) hue-rotate(157deg) brightness(93%) contrast(101%);
     }
