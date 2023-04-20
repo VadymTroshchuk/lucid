@@ -99,20 +99,33 @@
 }
 }
 
+
+
+
+@media (max-width: 767px){
+    .about{
+        &-img{
+            max-width: 70%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 0px;
+    }
+    .about{
+        &-container{
+          flex-direction: column;
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+    
+      }
+}
+}
+
 @media (max-width: 576px){
   
-  .about{
-    &-container{
-      flex-direction: column;
-    }
 
-    &-img{
-      margin: 0;
-      height: auto;
-      width: 100%;
-      margin-top: 31px;
-    }
-  }
 }
 
 

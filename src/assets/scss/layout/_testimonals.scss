@@ -66,9 +66,16 @@
 
 @media (max-width: 767px){
     .testimonals{
-
+        padding-top: 40px;
+        padding-bottom: 40px;
         height: 780px;
+        &__bottom-content{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
     }
+
  }
 
 

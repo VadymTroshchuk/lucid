@@ -57,15 +57,19 @@
 
 @media (max-width: 767px){
     .device{
+        padding-top: 40px;
+        padding-bottom: 30px;
         &__container{
-  
-        }
-        &__img-container{
-            display: flex;
-            justify-content: center;
+            flex-direction: column;
+            padding-top: 0px;
         }
         &__img{
-            
+            max-width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 0;
         }
         &__text{
 
@@ -74,14 +78,3 @@
 }
 
 
-@media (max-width: 731px){
-    .device{
-        &__container{
-            flex-direction: column;
-        }
-        &__img{
-            margin-right: 0px;
-            width: 100%;
-        }
-    }
-}

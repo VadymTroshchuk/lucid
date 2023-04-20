@@ -68,7 +68,9 @@
 
     }
     &__container{
-   
+   flex-direction: column;
+   padding-top: 40px;
+
     }
     &__title{
  
@@ -83,17 +85,24 @@
     &__btn-container{
      
     }
-  }
-}
-
-
-@media (max-width: 452px){
-  .introduction{
     &__img{
-      width: 95%;
-    }
+      max-width: 65%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      }
   }
 }
+
+
+// @media (max-width: 452px){
+//   .introduction{
+//     &__img{
+//       width: 95%;
+//     }
+//   }
+// }
 
 
 .button {
