@@ -43,28 +43,30 @@
 
 
             <div class="form ">
-                <form action="" class="form__wrapper row row-cols-2 ">
+                <form  id="form-js" action="" class="form__wrapper row row-cols-2 ">
                     <div class="form__input-left">
-                        <div class="form__input-wrapper" data-validate="Name is required">
-                            <input class="form__input name-input " type="text" placeholder="NAME">
-                            <span class="name-error" ></span>
+                        <div class="form__input-wrapper " data-validate="Name is required">
+                            <input class="form__input name-input " type="text" placeholder="NAME" id="name-js">
+                            <small class="name-error" >Name is not valid</small>
                             <span class="focus-border">
                                 <i></i>
                             </span> 
                         </div>
-                        <div class="form__input-wrapper" data-validate="Email is required">
-                            <input class="form__input" type="text" placeholder="EMAIL">
+                        <div class="form__input-wrapper " data-validate="Email is required">
+                            <input class="form__input email-input" type="text" placeholder="EMAIL" id="email-js">
+                            <small class="email-error" >Email is not valid</small>
                         </div>
                         <div class="form__input-wrapper" data-validate="Subject is required">
-                            <input class="form__input" type="text" placeholder="SUBJECT">
+                            <input class="form__input subject-input" type="text" placeholder="SUBJECT" id="subject-js">>
+                            <small class="subject-error" >Subject is required</small>
                         </div>
                     </div>
                     <div class="form__input-right">
                         <div class="form__input-wrapper" data-validate="Message is required">
 
 
-                            <textarea class="form__input" id="input" name="message" placeholder="MESSAGE"></textarea>
-
+                            <textarea class="form__input message-input"  name="message" placeholder="MESSAGE" id="message-js" ></textarea>
+                            <small class="message-error" >Longer message is required</small>
 
 
                         </div>

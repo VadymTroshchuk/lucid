@@ -23,3 +23,6 @@ new Swiper ('.slider' , {
     
 
 });
+
+
+

@@ -94,21 +94,32 @@
       color: v.$main-blue-color;
     
     }
-
-
+    &__input-wrapper.succes &__input{
+        border: 1px solid #2ecc71;
+    }
+    &__input-wrapper.error &__input{
+        border: 1px solid #e74c3c;
+    }
+    &__input-wrapper small {
+        color: #e74c3c;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        position: absolute;
+        top: -15px;
+        font-size: 9px;
+        left: 0px;
+        right: -90px;
+    }
 
   
 }
 
-#sumbmit-error{
-    color: red;
-    position: absolute;
-}
 
-.form-wrapper span{
-    color: red;
-}
 
+
+.message-error{
+    opacity: 1;
+}
 
 
 .button-contacts{
@@ -150,6 +161,3 @@
 
 
 
-input:focus{
-     color:  transparent;
-}
