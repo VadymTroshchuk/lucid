@@ -4,6 +4,15 @@
 @use "../abstracts/_mixins.scss" as m;
 
 
+.button {
+	position: relative;
+	transition: 0.5s ease;
+	z-index: 1;
+	overflow: hidden;
+  cursor: pointer;
+}
+
+
 .button-primary{
  @include m.button-primary;
 }
@@ -97,20 +106,10 @@
 }
 
 
+.button-contacts{
+	margin-left: auto;
+	margin-top: -15px;
+}
 
 
 
-// .hover-efect:hover::before,
-// .hover-efect:hover::after {
-// 	content: "";
-// 	height: 340%;
-// 	width: 214%;
-// }
-// .hover-efect:hover::before {
-// 	content: "";
-// 	left: -30%;
-// }
-// .hover-efect:hover::after {
-// 	content: "";
-// 	right: -70%;
-// }

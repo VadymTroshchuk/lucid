@@ -6,6 +6,25 @@
 
 
 .header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 90;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.01em;
+  padding-left: 0;
+  align-items: center;
+  align-content: space-between;
+  margin-top: 0px;
+  transition: all .3s;
+
 
   &__title{
     font-style: normal;
@@ -34,8 +53,10 @@
 }
 
 .navbar
+
 {
   padding-top: 30px;
+  padding-bottom: 30px;
   &__link{
     color: v.$header-nav-color;
   }

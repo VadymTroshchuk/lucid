@@ -12,7 +12,7 @@
   }
   &__container{
     gap: 243px;
-    padding-top: 51px;  
+    padding-top: 128px;
   }
   &__title{
     @include m.introduction-title;
@@ -105,11 +105,4 @@
 // }
 
 
-.button {
-	position: relative;
-	transition: 0.5s ease;
-	z-index: 1;
-	overflow: hidden;
-  
-}
 

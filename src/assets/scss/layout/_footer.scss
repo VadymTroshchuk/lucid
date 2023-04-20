@@ -59,5 +59,9 @@
     &__credits{
         @include footer-text;
     }
-
+    &__social-link{
+        width: 22px;
+        height: 22px;
+        display: block;
+    }
 }
