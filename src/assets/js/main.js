@@ -1,5 +1,6 @@
-//= components/functions.js
-//= components/script.js
+//= components/burger.js
+//= components/slider.js
+//= components/form-validation.js
+//= components/fixed-header.js
 
-const bootstrap = require('bootstrap'); 
 new Swiper ('.prices-slider');

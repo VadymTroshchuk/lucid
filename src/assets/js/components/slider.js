@@ -9,13 +9,13 @@ new Swiper ('.slider' , {
 
     spaceBetween: 20,
 
-    // autoplay: {
-    //     delay: 5000,
+    autoplay: {
+        delay: 5000,
 
-    //     stopOnLastSlide:false,
+        stopOnLastSlide:false,
 
-    //     disableOnInteraction: false,
-    // },
+        disableOnInteraction: false,
+    },
 
 
     speed: 800,
@@ -23,6 +23,4 @@ new Swiper ('.slider' , {
     
 
 });
-
-
 

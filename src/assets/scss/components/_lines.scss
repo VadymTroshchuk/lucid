@@ -2,6 +2,9 @@
 @use "../abstracts/_variables.scss" as v;
 @use "../abstracts/_mixins.scss" as m;
 
+
+ /// implementing lines under title for each section
+
 .lines{
   &__features, &__about, &__device , &__testimonals , &__pricing-plans ,  &__contacts{
     position: relative;
@@ -31,10 +34,10 @@
     left: 24px;
   }
   &__testimonals::before{
-    bottom: -32.8px;
+    bottom: -26.8px;
   }  
   &__testimonals::after{
-    bottom: -32.8px;
+    bottom: -26.8px;
   }
   &__pricing-plans::before{
     bottom: -30.8px;
@@ -43,10 +46,10 @@
     bottom: -30.8px;
   }
   &__contacts::before{
-    bottom: -30.8px;
+    bottom: -27.8px;
   }
   &__contacts::after{
-    bottom: -30.8px;
+    bottom: -27.8px;
   }
 
 

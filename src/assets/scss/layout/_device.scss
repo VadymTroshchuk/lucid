@@ -6,7 +6,7 @@
 .device{
     background-color: v.$background-gray-color;
     margin-top: 20px;
-    padding-bottom: 17px;
+    padding-bottom: 21px;
     &__item-text{
         @include m.section-text;
     }
