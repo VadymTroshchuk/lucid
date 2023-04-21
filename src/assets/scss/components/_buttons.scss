@@ -109,7 +109,9 @@
 .button-contacts{
 	margin-left: auto;
 	margin-top: 0px;
+	transition: all .4s;
 }
 
-
-
+.button-contacts:hover{
+	color: #15141a;
+}
