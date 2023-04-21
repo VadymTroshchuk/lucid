@@ -119,6 +119,19 @@
 
 
 
+@media (max-width: 450px){
+   .slider{
+     &__text{
+      font-size: 16px;
+     }
+     &__testimonal-text{
+      font-size: 12px;
+     }
+   }
+ }
+
+
+
 
 
 @media (max-width: 350px){

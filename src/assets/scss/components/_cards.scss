@@ -92,25 +92,12 @@
         padding-top: 27px;
         padding-bottom: 27px;
     }
-    
-}
-
-
-@media (max-width:1199px){
-
-    .cards-container{
-    justify-content: center;
-
+    &__description span {
+        color : v.$main-blue-color;
     }
-               
-
 }
-
-
-
-
-
 //hover efect for card-wrapper
+
 
 .hover-efect{
 	position: relative;
@@ -197,5 +184,46 @@
 .card-wrapper:hover  .card-header__title{
    color: $main-blue-color;
 }
+
+
+
+
+
+@media (max-width:1199px){
+
+    .cards-container{
+    justify-content: center;
+
+    }
+               
+
+}
+
+
+@media (max-width: 450px){
+    .card{
+
+      &__sub-title{
+        font-size: 12px;
+      }
+      &-header__title{
+        font-size: 20px;
+      }
+       &__dollar{
+        font-size: 20px;
+        }
+        &__price{
+            font-size: 50px;
+        }
+        &__month{
+            font-size: 14px;
+        }
+
+        &__description{
+            font-size: 16px;
+        }   
+    }
+  }
+
 
 

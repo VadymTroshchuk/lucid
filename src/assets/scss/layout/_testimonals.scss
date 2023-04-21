@@ -79,15 +79,36 @@
  }
 
 
-@media (max-width: 350px){
-    .testimonals{
-        &__btn-container{
-            flex-direction: column;
-        }
-    }
- }
 
- 
+
+ @media (max-width: 450px){
+    .testimonals{
+        height: 720px;
+
+     &__container{
+        padding-top: 30px;
+     }
+      &__sub-title{
+        font-size: 12px;
+      }
+      &__title{
+        font-size: 30px;
+      }
+      &__text{
+        font-size: 14px;
+      }
+      &__item-text{
+        font-size: 14px;
+      }
+      &__bottom-title{
+        font-size: 28px;
+      }
+      &__btn-container{
+        flex-direction: column;
+    }
+    }
+  }
+
 
 
 

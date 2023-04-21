@@ -21,6 +21,8 @@ letter-spacing: 1px;
     color: v.$header-title-color;
 }  
 
+
+
 @mixin mav-menu{
     color:  v.$main-white-color;
     font-family: v.$main-font;
@@ -52,6 +54,8 @@ letter-spacing: 1px;
     letter-spacing: 1.1px;
 
 }
+
+
 @mixin sub-title{
     font-size: 14px;
     letter-spacing: 1px;

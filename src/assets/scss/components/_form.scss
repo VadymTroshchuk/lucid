@@ -154,3 +154,14 @@
 }
 
 
+@media (max-width: 450px){
+    .form{
+        &__input-wrapper small {
+            font-size: 8px;        
+        }
+    }
+  }
+
+
+
+

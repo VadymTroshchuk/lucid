@@ -64,7 +64,11 @@
     }
 }
 
-
+@media (max-width: 991px){
+    .features{
+        
+    }
+}
 
 @media (max-width: 767px){
     .features{
@@ -72,3 +76,22 @@
         padding-bottom: 40px;
     }
 }
+
+
+
+
+
+
+@media (max-width: 450px){
+    .features{
+      &__sub-title{
+        font-size: 12px;
+      }
+      &__title{
+        font-size: 30px;
+      }
+      &__item-text{
+        font-size: 14px;
+      }
+    }
+  }
