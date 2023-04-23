@@ -82,7 +82,7 @@ document.getElementById('form-js').addEventListener('submit', function(event) {
 });
 
 
-function smoothScrollToTop() { // adjusting scroll speed when moving to top of the page after pressing submit button and all validation check is passed 
+function smoothScrollToTop() { // adjusting scroll speed when moving to top of the page after pressing submit button and after all validation check is passed 
   const scrollStep = -window.scrollY / (50 / 15); 
   const scrollInterval = setInterval(() => {
     if (window.scrollY !== 0) {
@@ -92,4 +92,11 @@ function smoothScrollToTop() { // adjusting scroll speed when moving to top of t
     }
   }, 15);
 }
+
+
+
+
+
+
+
 

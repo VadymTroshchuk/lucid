@@ -80,6 +80,17 @@
   transition: 0.5s;
 }
 
+
+
+.navbar__item-mob.active .navbar__link-mob::after {
+  width: 45%;
+}
+.navbar__item-mob.active  .navbar__link-mob::before {
+  
+  width: 45%;
+}
+
+
 .navbar__item-mob:hover .navbar__link-mob::after {
   width: 45%;
 }

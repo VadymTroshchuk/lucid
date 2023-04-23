@@ -24,3 +24,5 @@ new Swiper ('.slider' , {
 
 });
 
+
+

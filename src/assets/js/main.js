@@ -4,3 +4,5 @@
 //= components/fixed-header.js
 
 new Swiper ('.prices-slider');
+
+

@@ -5,7 +5,7 @@ const hamburgerLine = document.querySelectorAll('.hamburger-line')
 const body = document.body;
 const overlay = document.querySelector('.overlay');
 const mobNavLink = document.querySelector('.navbar__link-mob')
-
+mobNavLink.classList.add('active')
 
 hamburger.addEventListener('click', showBurgerMenu); // activate burger menu functions  //
 overlay.addEventListener('click' , hideBurgerMenu);
