@@ -1,27 +1,25 @@
-
-
-
-
 const header = document.querySelector('.header');
-header.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-
+// make it work after user reload the page
+window.addEventListener('DOMContentLoaded', () => {
+  const scrollPos = window.scrollY;
+  if (scrollPos > 60) {
+    header.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // changing backround color
+  } else {
+    header.style.backgroundColor = ''; // remove the background color 
+  }
+});
 
 window.addEventListener('scroll', () => {
+  // get the current scroll position
+  const scrollPos = window.scrollY;
 
-  window.addEventListener('scroll', () => {
-    // get the current scroll position
-    const scrollPos = window.scrollY;
-
-    // setting the background color of the header based on the scroll position
-    if (scrollPos > 60) {
-      header.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // changing backround color
-    } else {
-      header.style.backgroundColor = ''; // remove the background color 
-    }
-  });
-
-})
-
+  // setting the background color of the header based on the scroll position
+  if (scrollPos > 60) {
+    header.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // changing backround color
+  } else {
+    header.style.backgroundColor = ''; // remove the background color 
+  }
+});
 
 
 
