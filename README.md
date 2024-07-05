@@ -9,3 +9,4 @@ refactor: - did not add new functionality / did not change behavior. I put, dele
 refactor: change structure of the project<br>
 docs: - used when working with project documentation/readme file
 asdasdasdasdasdasdasdasdasdasdasdasd
+asdasd
